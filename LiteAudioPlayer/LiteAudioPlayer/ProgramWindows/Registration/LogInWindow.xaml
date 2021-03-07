@@ -1,0 +1,141 @@
+﻿<Window x:Class="LiteAudioPlayer.LogInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LiteAudioPlayer"
+        mc:Ignorable="d"
+        Title="LogInWindow" 
+        Height="300" Width="250"
+        WindowStartupLocation="Manual"
+        WindowStyle="None" 
+        AllowsTransparency="True"
+        Background="Transparent" 
+        Closed="Window_Closed">
+    
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}" x:Key="TextBoxStyle">
+            <Setter Property="Background" Value="#EDEDED"/>
+            <Setter Property="Foreground" Value="#252525"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                        <Border CornerRadius="6" Padding="2" Background="{TemplateBinding Background}" >
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#C6C6C6"  />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style TargetType="{x:Type PasswordBox}" x:Key="PasswordBoxStyle">
+            <Setter Property="Background" Value="#EDEDED"/>
+            <Setter Property="Foreground" Value="#252525"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type PasswordBox}">
+                        <Border CornerRadius="6" Padding="2" Background="{TemplateBinding Background}" >
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#C6C6C6"  />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Button"  x:Key="ButtonStyle" >
+            <Setter Property="Background" Value="#171717"  />
+            <Setter Property="Foreground" Value="#EBEBEB" />
+            <Setter Property="Template" >
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" Background="{TemplateBinding Background}" >
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#222222"  />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#6E6E6E"  />
+                                <Setter Property="Foreground" Value="#000000" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Border  Background="#02000000" Padding="1">
+        <Border Background="#04000000" Padding="1">
+            <Border  Background="#06000000" Padding="1">
+                <Border  Background="#08000000" Padding="1">
+                    <Border  Background="#10000000" Padding="1">
+
+                        <Grid  Background="#282828">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Border Grid.Row="0" Background="#101010" MouseDown="ToolBar_MouseDown"/>
+                            <StackPanel Name="StackPanelLogInWindow" Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Right">
+                                <Image Name="MinimizeButton" Height="25" Width="25" MouseDown="MinimizeButtonLogInWindow_MouseDown">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}" >
+                                            <Setter Property="Source" Value="pack://application:,,,/source/images/tool_bar/minimize.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=MinimizeButton}" Value="True">
+                                                    <Setter Property="Source" Value="pack://application:,,,/source/images/tool_bar/minimize_active.png"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                                <Image Name="CloseButton" Height="25" Width="25" MouseDown="CloseButtonLogInWindow_MouseDown">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="pack://application:,,,/source/images/tool_bar/close.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=CloseButton}" Value="True">
+                                                    <Setter Property="Source" Value="pack://application:,,,/source/images/tool_bar/close_active.png"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </StackPanel>
+
+                            <Label Content="Log in" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Foreground="#EEEEEE" FontFamily="Ebrima"/>
+
+                            <TextBox Name="username"  Style="{StaticResource TextBoxStyle}" VerticalContentAlignment="Center" Grid.Row="2"  Margin="30,10,30,10" TextChanged ="username_TextChanged" FontFamily="Ebrima" />
+                            <Label Name="TextBlockUsername" Content="username"  Grid.Row="2" Margin="30,11,30,10" Foreground="#70000000" FontFamily="Ebrima" IsHitTestVisible="False"/>
+
+
+                            <PasswordBox Name="password"  Style="{StaticResource PasswordBoxStyle}" VerticalContentAlignment="Center" MaxLength="15" PasswordChanged="password_PasswordChanged" Grid.Row="3" Margin="30,10,30,10"/>
+                            <Label  Name="TextBlockPassword" Content="password" Grid.Row="3" Margin="30,10,30,10" Foreground="#70000000" IsHitTestVisible="False" FontFamily="Ebrima"/>
+
+                            <Button x:Name="button" Style="{StaticResource ButtonStyle}" Content="Complete to log in" Height="40" Width="150" Grid.Row="4" Click="button_Click" />
+                            <Label Name="MessageLabel" Grid.Row="4" Foreground="#FFC1C1C1" Margin="0,0,0,90"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Ebrima"  />
+
+                        </Grid>
+                    </Border>
+                </Border>
+            </Border>
+        </Border>
+    </Border>
+</Window>

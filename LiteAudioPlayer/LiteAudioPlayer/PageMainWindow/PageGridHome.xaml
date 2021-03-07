@@ -1,0 +1,40 @@
+﻿<Page x:Class="LiteAudioPlayer.PageMainWindow.PageGridHome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LiteAudioPlayer.PageMainWindow"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="700"
+      Title="PageGridHome">
+
+    <Grid>
+        <Grid Background="{DynamicResource ColorMain}">
+            <Grid.ColumnDefinitions>
+                
+                <ColumnDefinition  Width="*"/>
+               
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+             
+                <RowDefinition  Height="*"/>
+                <RowDefinition  Height="40"/>
+               
+            </Grid.RowDefinitions>
+      
+            <Label x:Name="LabelNameAudio"  Grid.Column="0" Grid.Row="1" Margin="10,0,26,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="17" Foreground="{DynamicResource  ColorForeground}" FontFamily="Ebrima"/>
+            <Label x:Name="LabelDots"  Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="17" Foreground="{DynamicResource  ColorForeground}" FontFamily="Ebrima" Margin="0,0,10,0"/>
+
+            <Viewbox Grid.Column="0" Grid.Row="0" Opacity="0.65" MaxHeight="500" Margin="10,10,10,0">
+                <Rectangle RadiusX="30" RadiusY="30" Width="150" Height="150" RenderOptions.BitmapScalingMode="HighQuality">
+                    <Rectangle.Fill>
+                        <ImageBrush  x:Name="ImageAudio" ImageSource="pack://application:,,,/source/images/player/cover.png" RenderOptions.BitmapScalingMode="Fant"/>
+                    </Rectangle.Fill>
+                    <Rectangle.BitmapEffect>
+                        <DropShadowBitmapEffect Direction="2" ShadowDepth="0" Softness="0.4" />
+                    </Rectangle.BitmapEffect>
+                </Rectangle>
+            </Viewbox>
+        </Grid>
+    </Grid>
+</Page>

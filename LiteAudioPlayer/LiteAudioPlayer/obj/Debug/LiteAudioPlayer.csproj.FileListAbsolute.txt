@@ -1,0 +1,115 @@
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.exe.config
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.exe
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.pdb
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\System.Data.SQLite.dll
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\System.Data.SQLite.xml
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csprojResolveAssemblyReference.cache
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\App.g.cs
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer_MarkupCompile.cache
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer_MarkupCompile.lref
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.g.resources
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.Properties.Resources.resources
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csproj.GenerateResource.Cache
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.exe
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.pdb
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.g.cs
+c:\users\klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.baml
+C:\Users\Klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridHome.g.cs
+C:\Users\Klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridList.g.cs
+C:\Users\Klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridOther.g.cs
+C:\Users\Klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridSettings.g.cs
+C:\Users\Klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridHome.baml
+C:\Users\Klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridList.baml
+C:\Users\Klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridOther.baml
+C:\Users\Klover\documents\visual studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridSettings.baml
+C:\Users\Klover\Documents\Visual Studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\App.baml
+C:\Users\Klover\Documents\Visual Studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\DictionaryStyles.baml
+C:\Users\Klover\Documents\Visual Studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\ProgramWindows\Registration\LogInWindow.g.cs
+C:\Users\Klover\Documents\Visual Studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\ProgramWindows\Registration\LogInWindow.baml
+C:\Users\Klover\Documents\Visual Studio 2015\Projects\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\taglib-sharp.dll
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.exe.config
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.exe
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.pdb
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.exe
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.pdb
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\System.Data.SQLite.dll
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\System.Data.SQLite.xml
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csprojResolveAssemblyReference.cache
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.g.cs
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\ProgramWindows\Registration\LogInWindow.g.cs
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridHome.g.cs
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridList.g.cs
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridOther.g.cs
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridSettings.g.cs
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\App.g.cs
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer_MarkupCompile.cache
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer_MarkupCompile.lref
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\App.baml
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\DictionaryStyles.baml
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.baml
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\ProgramWindows\Registration\LogInWindow.baml
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridHome.baml
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridList.baml
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridOther.baml
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridSettings.baml
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.g.resources
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.Properties.Resources.resources
+F:\wpf\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csproj.GenerateResource.Cache
+F:\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.exe.config
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.exe
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.pdb
+F:\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.exe
+F:\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.pdb
+F:\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\System.Data.SQLite.dll
+F:\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\System.Data.SQLite.xml
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csprojResolveAssemblyReference.cache
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.g.cs
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\ProgramWindows\Registration\LogInWindow.g.cs
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridHome.g.cs
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridList.g.cs
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridOther.g.cs
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridSettings.g.cs
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\App.g.cs
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer_MarkupCompile.cache
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer_MarkupCompile.lref
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\App.baml
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\DictionaryStyles.baml
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.baml
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\ProgramWindows\Registration\LogInWindow.baml
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridHome.baml
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridList.baml
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridOther.baml
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridSettings.baml
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.g.resources
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.Properties.Resources.resources
+F:\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csproj.GenerateResource.Cache
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.exe.config
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.exe
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\LiteAudioPlayer.pdb
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\System.Data.SQLite.dll
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\bin\Debug\System.Data.SQLite.xml
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csprojAssemblyReference.cache
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.g.cs
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\ProgramWindows\Registration\LogInWindow.g.cs
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridHome.g.cs
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridList.g.cs
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridOther.g.cs
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridSettings.g.cs
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\App.g.cs
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer_MarkupCompile.cache
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer_MarkupCompile.lref
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\App.baml
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\DictionaryStyles.baml
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.baml
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\ProgramWindows\Registration\LogInWindow.baml
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridHome.baml
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridList.baml
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridOther.baml
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\PageMainWindow\PageGridSettings.baml
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.g.resources
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.Properties.Resources.resources
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csproj.GenerateResource.cache
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csproj.CoreCompileInputs.cache
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.csproj.CopyComplete
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.exe
+C:\Users\sexx\source\repos\LiteAudioPlayer\LiteAudioPlayer\obj\Debug\LiteAudioPlayer.pdb

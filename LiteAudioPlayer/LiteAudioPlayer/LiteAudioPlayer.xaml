@@ -1,0 +1,249 @@
+﻿<Window x:Class="LiteAudioPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LiteAudioPlayer"
+        mc:Ignorable="d"
+        Title="Lite Audio Player" 
+        Height="350" Width="700"
+        WindowStartupLocation="Manual"
+        WindowStyle="None" 
+        AllowsTransparency="True"
+        Background="Transparent"
+        MouseDown="Window_MouseDown" SizeChanged="Window_SizeChanged" >
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome ResizeBorderThickness="6" CaptionHeight="0" 
+                      CornerRadius="0" GlassFrameThickness="0"/>
+    </WindowChrome.WindowChrome>
+
+    <Border Name="Border1" Background="#01121212" Padding="1">
+        <Border Name="Border2" Background="#02121212" Padding="1">
+            <Border Name="Border3" Background="#04121212" Padding="1">
+                <Border Name="Border4" Background="#06121212" Padding="1">
+                    <Border Name="Border5" Background="#09121212" Padding="1">
+                        <Border Name="Border6" Background="#13121212" Padding="1">
+
+                            <Grid Name="MainGrid" Grid.Column="1" Grid.Row="1"  Background="{DynamicResource ColorMain}" >
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25" />
+                                    <RowDefinition Height="25" />
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="50"/>
+                                </Grid.RowDefinitions>
+                                <Grid Name="ToolBar" Grid.Row="0"  Background="{DynamicResource  ColorToolBar}"  
+                                      MouseUp="ToolBar_MouseUp" MouseDown="ToolBar_MouseDown" MouseMove="ToolBar_MouseMove">
+
+                                    <StackPanel Name="StackPanel" Orientation="Horizontal" HorizontalAlignment="Left" Margin="15,0,0,0">
+                                        <Image Name="Icon"  Height="17" Width="17">
+                                            <Image.Style>
+                                                <Style TargetType="{x:Type Image}">
+                                                    <Setter Property="Source" Value="source/images/icons/icon.png"/>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+
+                                        <Label Content="Lite Audio Player"  Name="label" Foreground="{DynamicResource  ColorForeground}" Margin="5,0,0,0"/>
+                                    </StackPanel>
+
+                                    <StackPanel Name="StackPanel1" Orientation="Horizontal" HorizontalAlignment="Right">
+                                        <Image Name="MinimizeButton" Height="25" Width="25"
+                                               MouseUp="MinimizeButton_MouseUp" MouseDown="MinimizeButton_MouseDown">
+                                            <Image.Style>
+                                                <Style TargetType="{x:Type Image}" >
+                                                    <Setter Property="Source" Value="source/images/tool_bar/minimize.png"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=MinimizeButton}" Value="True">
+                                                            <Setter Property="Source" Value="source/images/tool_bar/minimize_active.png"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+
+                                        <Image Name="MaximizedButton" Height="25" Width="25"
+                                               MouseUp="MaximizedButton_MouseUp" MouseDown="MaximizedButton_MouseDown">
+                                            <Image.Style>
+                                                <Style TargetType="{x:Type Image}">
+                                                    <Setter Property="Source" Value="source/images/tool_bar/maximized.png"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=MaximizedButton}" Value="True">
+                                                            <Setter Property="Source" Value="source/images/tool_bar/maximized_active.png"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+
+                                        <Image Name="CloseButton" Height="25" Width="25" MouseUp="CloseButton_MouseUp" MouseDown="CloseButton_MouseDown">
+                                            <Image.Style>
+                                                <Style TargetType="{x:Type Image}">
+                                                    <Setter Property="Source" Value="source/images/tool_bar/close.png"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=CloseButton}" Value="True">
+                                                            <Setter Property="Source" Value="source/images/tool_bar/close_active.png"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid x:Name="Navigation" Grid.Row="1">
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="60*"   MinWidth="60" MaxWidth="120"/>
+                                        <ColumnDefinition Width="60*"  MinWidth="60"  MaxWidth="120"/>
+                                        <ColumnDefinition Width="60*"   MinWidth="60"  MaxWidth="120"/>
+                                        <ColumnDefinition Width="55*"   MinWidth="55"  MaxWidth="115"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="170*"/>
+                                        <ColumnDefinition Width="200*" MinWidth="170" MaxWidth="300" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Border Grid.Column="0" Background="{DynamicResource  ColorToolBar}" Margin="0,-02,-02,12.5"/>
+                                    <Border Grid.Column="7" Background="{DynamicResource  ColorToolBar}" Margin="-02,-02,0,12.5"/>
+
+                                    <Border Grid.Column="0" Background="{DynamicResource  ColorMain}" Margin="0,0,0,0" CornerRadius="0,5,0,0"/>
+                                    <Border Grid.Column="1" Background="{DynamicResource  ColorToolBar}" Margin="0,-02,-0.4,0" CornerRadius="0,0,0,10" Grid.ColumnSpan="3"/>
+                                    <Border Grid.Column="1" Background="{DynamicResource  ColorToolBar}" Margin="10,-2,0,0"  CornerRadius="0,0,0,0"/>
+                                    <Border Grid.Column="3" Background="{DynamicResource  ColorToolBar}" Margin="0,-02,-1,0" CornerRadius="0,0,0,0"/>
+                                    <Border Grid.Column="4" Background="{DynamicResource  ColorToolBar}" Margin="0,-02,-1,0" CornerRadius="0,0,0,0"/>
+                                    <Border Grid.Column="5" Background="{DynamicResource  ColorToolBar}" Margin="0,-02,0,0" CornerRadius="0,0,0,0"/>
+                                    <Border Grid.Column="6" Background="{DynamicResource  ColorToolBar}" Margin="-05,-02,0,0" CornerRadius="0,0,10,0"/>
+                                    <Border Grid.Column="7" Background="{DynamicResource  ColorMain}" Margin="-0.4,0,-2,0" CornerRadius="5,0,0,0"/>
+
+
+                                    <Button Height="20" Grid.Column="2" Margin="0,0,5,5" Style="{StaticResource ButtonStyleNavigation}"
+                                            Name="Home" Content="Home" FontSize="11" Click="button_Click" />
+                                    <Button Height="20"  Grid.Column="3" Margin="0,0,5,5" Style="{StaticResource ButtonStyleNavigation}" 
+                                            Name="List" Content="List" FontSize="11" Click="button_Click" />
+                                    <Button Height="20"  Grid.Column="4"  Margin="0,0,5,5"  Style="{StaticResource ButtonStyleNavigation}"
+                                            Name="Settings" Content="Settings" FontSize="11" Click="button_Click"  />
+                                    <Button Height="20" Grid.Column="5" Margin="0,0,0,5"  Style="{StaticResource ButtonStyleNavigation}" 
+                                            Name="Other" Content="Other" FontSize="11" Click="button_Click" />
+
+
+
+                                    <TextBox x:Name="Search" Style="{StaticResource TextBoxSearchStyle}" VerticalContentAlignment="Center" Grid.Row="1" Grid.Column="9"
+                                             Margin="0,5,10,0" FontFamily="Ebrima" IsMouseCapturedChanged="Search_IsMouseCapturedChanged" TextChanged ="Search_TextChanged" KeyUp="Search_KeyUp"/>
+                                    <Label Name="LabelSearch" Content="Search..."  Grid.Row="1"  Grid.Column="9" Foreground="{DynamicResource  ColorForeground}" Margin="4,1,0,0" FontFamily="Myanmar Text" IsHitTestVisible="False"/>
+                                    <Image Name="SearchButton" Grid.Row="1"  Grid.Column="9" Margin="0,5,15,4"  Height="12" Width="12" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                                        <Image.Style>
+                                            <Style TargetType="{x:Type Image}">
+                                                <Setter Property="Source" Value="source/images/icons/search.png"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=SearchButton}" Value="True">
+                                                        <Setter Property="Source" Value="source/images/icons/search_active.png"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+
+                                </Grid>
+
+
+                                <Grid Grid.Row="2">
+                                    <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
+                                </Grid>
+
+                                <Border  Grid.Row="3">
+                                    <Grid>
+
+                                        <Grid.ColumnDefinitions >
+                                            <ColumnDefinition Width="150*" MinWidth="50"/>
+                                            <ColumnDefinition Width="400*" MinWidth="320" MaxWidth="600" />
+                                            <ColumnDefinition Width="150*" MinWidth="50" Name="WidthColumn2"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Rectangle RadiusX="13" RadiusY="13" Width="40" Grid.Column="0" Opacity="0.65" Margin="10,5,10,5" HorizontalAlignment="Right" RenderOptions.BitmapScalingMode="HighQuality">
+                                            <Rectangle.Fill>
+                                                <ImageBrush  x:Name="ImageAudioMain" ImageSource="source/images/player/cover.png"/>
+                                            </Rectangle.Fill>
+
+                                        </Rectangle>
+
+
+                                        <Border Grid.Column="1" Background="#A0000000" CornerRadius="15" Height="40" />
+                                        <Grid Grid.Column="1">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="40"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+
+                                            <Slider x:Name="slider" IsMoveToPointEnabled="True" Value="{Binding CurrentFrame}" IsEnabled="{Binding IsPause}"
+                                                        TickFrequency="0.01" VerticalAlignment="Top" Margin="47,6,47,10" Grid.Row="1" ValueChanged="slider_ValueChanged"/>
+
+                                            <Label x:Name="LabelPlaerLeft" Content="00:00" HorizontalAlignment="Left" Margin="10,2,0,0"
+                                                       VerticalAlignment="Top" Grid.RowSpan="2" Foreground="{DynamicResource  ColorForeground}"/>
+                                            
+                                            <Label x:Name="LabelPlaerRight" Content="00:00" HorizontalAlignment="Right" Margin="0,2,10,0"
+                                                       VerticalAlignment="Top" Grid.RowSpan="2" Foreground="{DynamicResource  ColorForeground}"/>
+
+                                            <Image Name="PlayPauseButton" Opacity="1" Source="source/images/player/play.png" VerticalAlignment="Bottom"
+                                                       HorizontalAlignment="Center" Grid.RowSpan="2" Height="23" Width="23" Margin="0,0,0,2.5"  
+                                                       MouseEnter="PlayPauseButton_MouseEnter" MouseLeave="PlayPauseButton_MouseLeave" MouseUp="PlayPauseButton_MouseUp" />
+
+                                            <Image Name="NextButton" Source="source/images/player/next.png" VerticalAlignment="Bottom"
+                                                       HorizontalAlignment="Center" Grid.RowSpan="2" Height="20" Width="20" Margin="50,0,0,4"/>
+
+                                            <Image Name="BackButton" Source="source/images/player/back.png" VerticalAlignment="Bottom"
+                                                       HorizontalAlignment="Center" Grid.RowSpan="2" Height="20" Width="20" Margin="-60,0,0,4"/>
+
+                                            <Image Name="MixButton" Source="source/images/player/mix.png" VerticalAlignment="Bottom"
+                                                       HorizontalAlignment="Right" Grid.RowSpan="2" Height="14.5" Width="14.5" Margin="0,0,75,6.5"/>
+
+                                            <Image Name="RepeatButton" Source="source/images/player/repeat.png" VerticalAlignment="Bottom"
+                                                       HorizontalAlignment="Right" Grid.RowSpan="2" Height="14.5" Width="14.5" Margin="0,0,49,6.5" />
+
+                                            <Image Name="ListButton" Source="source/images/player/list.png" VerticalAlignment="Bottom"
+                                                       HorizontalAlignment="Right" Grid.RowSpan="2" Height="16" Width="16" Margin="0,0,20.5,6"  
+                                                       MouseEnter="ListButton_MouseEnter" MouseLeave="ListButton_MouseLeave" MouseUp="ListButton_MouseUp"/>
+
+                                            <Image Name="VolumeButton" Source="source/images/player/volume.png" VerticalAlignment="Bottom"
+                                                       HorizontalAlignment="Left" Grid.RowSpan="2" Height="14.5" Width="18" Margin="22.5,0,20.5,7"  
+                                                       MouseEnter="VolumeButton_MouseEnter" MouseLeave="VolumeButton_MouseLeave"/>
+
+                                            <Slider x:Name="VolumeSlider" IsMoveToPointEnabled="True" Value="{Binding CurrentFrame}" IsEnabled="{Binding IsPause}"
+                                                        TickFrequency="0.01" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Width="0" Margin="40.5,0,22,9" Grid.Row="1" MouseEnter="VolumeSlider_MouseEnter" MouseLeave="VolumeSlider_MouseLeave" />
+                                        </Grid>
+
+
+                                        <Grid Name="GridCurrentFolderList" Grid.Column="2" Height="200" Width="127" MaxWidth="200" Margin="10,-200,10,5" Opacity="0.65" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                                            <Border Background="#A0000000" CornerRadius="15" >
+                                                <ScrollViewer Margin="0,15,-14,15">
+                                                    <Grid>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="0"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <StackPanel x:Name="StackPanelCoverList" Grid.Column="0" Margin="0,0,2,0" Background="Aqua"/>
+                                                        <StackPanel x:Name="StackPanelCurrentFolderList" Grid.Column="1" Margin="0,0,2,0"/>
+                                                    </Grid>
+
+                                                </ScrollViewer>
+                                            </Border>
+                                        </Grid>
+
+
+                                    </Grid>
+                                    <Border.BitmapEffect>
+                                        <DropShadowBitmapEffect Direction="0" ShadowDepth="0" Softness="0.2" />
+                                    </Border.BitmapEffect>
+                                </Border>
+
+                            </Grid>
+                        </Border>
+                    </Border>
+                </Border>
+            </Border>
+        </Border>
+    </Border>
+</Window>
